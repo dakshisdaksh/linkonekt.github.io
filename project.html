@@ -11,8 +11,28 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
-  
+  <style>
+    .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+  </style>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
@@ -95,7 +115,10 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>  
-          <img src="./assets/images/img-05.jpg" alt="" class="img-responsive reveal-content" data-action="zoom">
+       <!--   <img src="./assets/images/img-05.jpg" alt="" class="img-responsive reveal-content" data-action="zoom"> -->
+          <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/vENPyzsy8Yc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>  
       </div>
     </div>
