@@ -23,6 +23,18 @@ body {
 	margin: 0
 }
 
+.disp{
+	display:"flex";
+	flex-direction: "row";
+	align-items:"center";
+	justify-content: "space-around";
+}
+.brand{
+	margin-top:1.2rem;
+	color:#fff;
+	padding:2.2rem;
+}
+
 article,
 aside,
 details,
@@ -4101,7 +4113,9 @@ tbody.collapse.in {
 }
 
 .navbar-brand {
-	float: left;
+	display:flex;
+	padding-top:1.2rem;
+	flex-grow: 1;
 	padding: 27.5px 15px;
 	font-size: 23px;
 	line-height: 25px;
@@ -4120,7 +4134,7 @@ tbody.collapse.in {
 @media (min-width:768px) {
 	.navbar>.container-fluid .navbar-brand,
 	.navbar>.container .navbar-brand {
-		margin-left: -15px
+		margin-left: -15px;
 	}
 }
 
@@ -5542,6 +5556,7 @@ button.close {
 }
 
 .navbar-brand>.navbar-logo-img {
+	margin-right:.2rem;
 	display: inline-block;
 	margin-top: -5px
 }
